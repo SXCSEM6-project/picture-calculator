@@ -1,12 +1,40 @@
 <html>
-    <head>
-        <style>
 
-        </style>
-    </head>
-    <body>
-        <div align="center">
-            <img src="image.png" alt="xyz">
-        </div>
-    </body>
+<head>
+    <style>
+
+    </style>
+
+    <script>
+        let srvRes
+
+        const call = () => {
+            console.log("Called")
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', "/response", true)
+            xhr.send();
+            xhr.onload = (res) => {
+                console.log(res)
+                console.log(res['target']['response'])
+                srvRes = res['target']['response'];
+                document.getElementById("img").innerHTML = srvRes
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div align="center">
+        <img src="image.png" alt="xyz">
+    </div>
+
+    <p id="img"></p>
+    <!-- <img src="ROI_0.png">
+    <img src="ROI_1.png">
+    <img src="ROI_2.png">
+    <img src="ROI_3.png">
+    <img src="ROI_4.png"> -->
+    <script>call()</script>
+</body>
+
 </html>
