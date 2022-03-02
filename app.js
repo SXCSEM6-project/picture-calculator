@@ -82,7 +82,13 @@ function server_func(request, response) {
         response.writeHead(200, { 'Content-type': 'text/javascript' });
         response.end(data)
     }
-    
+    //about us 
+    if (request.url == "/about") {
+        const data = fs.readFileSync("web/about.html", "utf-8")
+        response.writeHead(200, { 'Content-type': 'text/html' });
+        response.end(data)
+    }
+
     // Result Page
     if (request.url == '/res.css') {
         const data = fs.readFileSync("styles/res.css", "utf-8")
@@ -126,6 +132,26 @@ function server_func(request, response) {
     if (request.url == "/draw.png") {
         const data = fs.readFileSync("res/draw.png")
         response.writeHead(200, { 'Content-type': 'image/png' });
+        response.end(data)
+    }
+     if (request.url == "/grp.png") {
+        const data = fs.readFileSync("res/grp.png")
+        response.writeHead(200, { 'Content-type': 'image/png' });
+        response.end(data)
+    }
+    if (request.url == "/ankita.jpg") {
+        const data = fs.readFileSync("res/ankita.jpg")
+        response.writeHead(200, { 'Content-type': 'image/jpg' });
+        response.end(data)
+    }
+    if (request.url == "/srirup.jpg") {
+        const data = fs.readFileSync("res/srirup.jpg")
+        response.writeHead(200, { 'Content-type': 'image/jpg' });
+        response.end(data)
+    }
+    if (request.url == "/rhitajyoti.jpg") {
+        const data = fs.readFileSync("res/rhitajyoti.jpg")
+        response.writeHead(200, { 'Content-type': 'image/jpg' });
         response.end(data)
     }
 

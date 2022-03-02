@@ -98,10 +98,10 @@
 		position: absolute;
 		z-index: 2;
 		left: 780px;
-		top: 200px;
-		font-size: 40px;
+		top: 150px;
+		font-size: 30px;
 		font-family: 'Mochiy Pop P One', sans-serif;
-		line-height: 2px;
+		/*line-height: 2px;*/
       	display: block;
       	overflow: hidden;
       	animation: slidein 3s;
@@ -113,7 +113,7 @@
 		top: 200px;
 		font-size: 40px;
 		font-family: 'Mochiy Pop P One', sans-serif;
-		line-height: 2px;
+		line-height: 3px;
       	display: none;
       	overflow: hidden;
       	animation: slidein2 2s;
@@ -146,14 +146,14 @@
 	    90%{  opacity: 1.0; }
 	    100% { opacity: 1;margin-left:0px; }
 	}
-	.box3, .box4{
+	.box3, .box4, .box5{
 		position: absolute;
 		z-index: 2;
 		left: 780px;
 		top: 200px;
 		font-size: 40px;
 		font-family: 'Mochiy Pop P One', sans-serif;
-		line-height: 2px;
+		line-height: 3px;
       	display: none;
       	overflow: hidden;
       	animation: slidein3 1s;

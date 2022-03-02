@@ -29,10 +29,17 @@ function change_text2(){
   			document.querySelector(".bgImage3").style.backgroundImage= "url('./cam.jpg')";
   			document.querySelector(".bgImage3").style.animation ="fadeInAnimation2 2s ease";
 }
+function change_text3(){
+  			document.querySelector(".box2").style.display= "none";
+  			document.querySelector(".box5").style.display= "block";
+  			document.querySelector(".bgImage3").style.backgroundImage= "url('./grp.png')";
+  			document.querySelector(".bgImage3").style.animation ="fadeInAnimation2 2s ease";
+}
 function normal(){
 			document.querySelector(".box2").style.display= "block";
   			document.querySelector(".box3").style.display= "none";
   			document.querySelector(".box4").style.display= "none";
+  			document.querySelector(".box5").style.display= "none";
   			document.querySelector(".bgImage3").style.backgroundImage= "url('./calc.jpg')";
   			document.querySelector(".bgImage3").style.animation ="fadeInAnimation2 2s ease";
 }
